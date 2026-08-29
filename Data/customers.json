@@ -1,0 +1,1195 @@
+[
+  {
+    "customerId": "CUST001",
+    "nrc": "12/ABC(N)123456",
+    "name": "Mg Mg",
+    "age": 28,
+    "occupation": "Software Developer",
+    "monthlyIncome": 1500000,
+    "location": "Yangon",
+    "preferredLanguage": "my-MM",
+    "preferredContactChannel": "SMS",
+    "policies": [
+      {
+        "policyId": "POL001",
+        "productCode": "LIFE001",
+        "productName": "Life Protection Plan",
+        "policyOwner": {
+          "customerId": "CUST001",
+          "name": "Mg Mg",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST001",
+          "name": "Mg Mg",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "Daw Daw",
+            "relationship": "Mother",
+            "percentage": 100
+          }
+        ],
+        "premium": {
+          "amount": 45000,
+          "currency": "MMK",
+          "frequency": "Monthly",
+          "nextPaymentDate": "2026-09-05"
+        },
+        "coverage": {
+          "sumAssured": 50000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2025-09-05",
+        "policyEndDate": "2045-09-05",
+        "status": "Active"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY001",
+        "policyId": "POL001",
+        "date": "2026-08-05",
+        "amount": 45000,
+        "currency": "MMK",
+        "paymentMethod": "Mobile Banking",
+        "status": "Paid"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-28T19:32:00+06:30",
+      "loginCountLast30Days": 12,
+      "frequentlyViewedServices": [
+        "Policy Details",
+        "Premium Payment",
+        "Beneficiary Information"
+      ],
+      "lastViewedPolicy": "POL001",
+      "preferredContactTime": "18:00-21:00",
+      "preferredChannels": [
+        "Mobile App",
+        "SMS"
+      ],
+      "commonQuestions": [
+        "How can I pay my premium?",
+        "When is my next premium due?",
+        "How can I change my beneficiary?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI001",
+        "type": "WELCOME_SMS",
+        "channel": "SMS",
+        "policyId": "POL001",
+        "sentDate": "2025-09-05T10:00:00+06:30",
+        "message": "Welcome to our Life Protection Plan. Your policy is now active.",
+        "status": "Delivered"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [
+        {
+          "inquiryId": "INQ001",
+          "date": "2026-08-20",
+          "channel": "Mobile App",
+          "topic": "Premium Payment",
+          "question": "How can I pay my premium?",
+          "resolution": "Payment instructions provided",
+          "status": "Resolved"
+        }
+      ],
+      "complaints": [],
+      "serviceRequests": [
+        {
+          "requestId": "REQ001",
+          "date": "2026-08-22",
+          "type": "Beneficiary Information",
+          "description": "Customer requested beneficiary information",
+          "status": "Completed"
+        }
+      ]
+    }
+  },
+  {
+    "customerId": "CUST002",
+    "nrc": "9/XYZ(N)654321",
+    "name": "Ma Hla Hla",
+    "age": 35,
+    "occupation": "Teacher",
+    "monthlyIncome": 800000,
+    "location": "Mandalay",
+    "preferredLanguage": "my-MM",
+    "preferredContactChannel": "Mobile App",
+    "policies": [
+      {
+        "policyId": "POL002",
+        "productCode": "HLTH001",
+        "productName": "Family Health Cover",
+        "policyOwner": {
+          "customerId": "CUST002",
+          "name": "Ma Hla Hla",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST002",
+          "name": "Ma Hla Hla",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "Mg Min Min",
+            "relationship": "Spouse",
+            "percentage": 70
+          },
+          {
+            "name": "Ma Su Su",
+            "relationship": "Daughter",
+            "percentage": 30
+          }
+        ],
+        "premium": {
+          "amount": 28000,
+          "currency": "MMK",
+          "frequency": "Monthly",
+          "nextPaymentDate": "2026-09-12"
+        },
+        "coverage": {
+          "sumAssured": 20000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2024-03-12",
+        "policyEndDate": "2034-03-12",
+        "status": "Active"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY002",
+        "policyId": "POL002",
+        "date": "2026-07-12",
+        "amount": 28000,
+        "currency": "MMK",
+        "paymentMethod": "KBZ Pay",
+        "status": "Paid"
+      },
+      {
+        "paymentId": "PAY003",
+        "policyId": "POL002",
+        "date": "2026-08-12",
+        "amount": 28000,
+        "currency": "MMK",
+        "paymentMethod": "KBZ Pay",
+        "status": "Paid"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-27T08:15:00+06:30",
+      "loginCountLast30Days": 6,
+      "frequentlyViewedServices": [
+        "Claim Status",
+        "Policy Details",
+        "Hospital Network"
+      ],
+      "lastViewedPolicy": "POL002",
+      "preferredContactTime": "07:00-09:00",
+      "preferredChannels": [
+        "Mobile App",
+        "Email"
+      ],
+      "commonQuestions": [
+        "Which hospitals are covered?",
+        "How do I submit a claim?",
+        "Can I add my daughter to this policy?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI002",
+        "type": "PREMIUM_REMINDER",
+        "channel": "Mobile App",
+        "policyId": "POL002",
+        "sentDate": "2026-08-10T09:00:00+06:30",
+        "message": "Your Family Health Cover premium of 28,000 MMK is due on 12 August 2026.",
+        "status": "Read"
+      },
+      {
+        "notificationId": "NOTI003",
+        "type": "PAYMENT_CONFIRMATION",
+        "channel": "Email",
+        "policyId": "POL002",
+        "sentDate": "2026-08-12T11:20:00+06:30",
+        "message": "Payment of 28,000 MMK for POL002 has been received. Thank you.",
+        "status": "Delivered"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [
+        {
+          "inquiryId": "INQ002",
+          "date": "2026-08-15",
+          "channel": "Call Center",
+          "topic": "Hospital Network",
+          "question": "Which hospitals in Mandalay are covered?",
+          "resolution": "Shared the in-network hospital list for Mandalay",
+          "status": "Resolved"
+        }
+      ],
+      "complaints": [],
+      "serviceRequests": [
+        {
+          "requestId": "REQ002",
+          "date": "2026-08-18",
+          "type": "Add Dependent",
+          "description": "Requested to add daughter Ma Su Su as a covered dependent",
+          "status": "In Progress"
+        }
+      ]
+    }
+  },
+  {
+    "customerId": "CUST003",
+    "nrc": "14/DEF(N)789012",
+    "name": "U Kyaw Kyaw",
+    "age": 47,
+    "occupation": "Business Owner",
+    "monthlyIncome": 3500000,
+    "location": "Naypyidaw",
+    "preferredLanguage": "en-MM",
+    "preferredContactChannel": "Phone",
+    "policies": [
+      {
+        "policyId": "POL003",
+        "productCode": "LIFE002",
+        "productName": "Whole Life Savings Plan",
+        "policyOwner": {
+          "customerId": "CUST003",
+          "name": "U Kyaw Kyaw",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST003",
+          "name": "U Kyaw Kyaw",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "Daw Mya Mya",
+            "relationship": "Spouse",
+            "percentage": 100
+          }
+        ],
+        "premium": {
+          "amount": 120000,
+          "currency": "MMK",
+          "frequency": "Quarterly",
+          "nextPaymentDate": "2026-10-01"
+        },
+        "coverage": {
+          "sumAssured": 100000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2022-10-01",
+        "policyEndDate": "2052-10-01",
+        "status": "Active"
+      },
+      {
+        "policyId": "POL004",
+        "productCode": "MOTOR001",
+        "productName": "Comprehensive Motor Insurance",
+        "policyOwner": {
+          "customerId": "CUST003",
+          "name": "U Kyaw Kyaw",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST003",
+          "name": "U Kyaw Kyaw",
+          "relationship": "Self"
+        },
+        "beneficiaries": [],
+        "premium": {
+          "amount": 180000,
+          "currency": "MMK",
+          "frequency": "Annually",
+          "nextPaymentDate": "2027-01-15"
+        },
+        "coverage": {
+          "sumAssured": 25000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2026-01-15",
+        "policyEndDate": "2027-01-15",
+        "status": "Active"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY004",
+        "policyId": "POL003",
+        "date": "2026-07-01",
+        "amount": 120000,
+        "currency": "MMK",
+        "paymentMethod": "Bank Transfer",
+        "status": "Paid"
+      },
+      {
+        "paymentId": "PAY005",
+        "policyId": "POL004",
+        "date": "2026-01-15",
+        "amount": 180000,
+        "currency": "MMK",
+        "paymentMethod": "Bank Transfer",
+        "status": "Paid"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-25T21:05:00+06:30",
+      "loginCountLast30Days": 3,
+      "frequentlyViewedServices": [
+        "Policy Details",
+        "Claim Status",
+        "Payment History"
+      ],
+      "lastViewedPolicy": "POL004",
+      "preferredContactTime": "09:00-12:00",
+      "preferredChannels": [
+        "Phone",
+        "Email"
+      ],
+      "commonQuestions": [
+        "Why was my motor claim delayed?",
+        "What is the cash value of my life policy?",
+        "Can I change the payment frequency?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI004",
+        "type": "CLAIM_UPDATE",
+        "channel": "SMS",
+        "policyId": "POL004",
+        "sentDate": "2026-08-21T14:40:00+06:30",
+        "message": "Your motor claim CLM004 is under review. We will update you within 5 working days.",
+        "status": "Delivered"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [
+        {
+          "inquiryId": "INQ003",
+          "date": "2026-08-10",
+          "channel": "Phone",
+          "topic": "Cash Value",
+          "question": "What is the current cash value of POL003?",
+          "resolution": "Quoted current surrender value and sent a written statement",
+          "status": "Resolved"
+        }
+      ],
+      "complaints": [
+        {
+          "complaintId": "CMP001",
+          "date": "2026-08-21",
+          "channel": "Phone",
+          "topic": "Claim Delay",
+          "description": "Customer complained that the motor accident claim has taken longer than promised.",
+          "resolution": "Escalated to claims team and assigned a case owner",
+          "status": "Open"
+        }
+      ],
+      "serviceRequests": [
+        {
+          "requestId": "REQ003",
+          "date": "2026-08-24",
+          "type": "Payment Frequency Change",
+          "description": "Requested to change POL003 premium frequency from quarterly to monthly",
+          "status": "In Progress"
+        }
+      ]
+    }
+  },
+  {
+    "customerId": "CUST004",
+    "nrc": "12/GHI(N)234567",
+    "name": "Ma Aye Aye",
+    "age": 32,
+    "occupation": "Accountant",
+    "monthlyIncome": 1200000,
+    "location": "Yangon",
+    "preferredLanguage": "my-MM",
+    "preferredContactChannel": "Email",
+    "policies": [
+      {
+        "policyId": "POL005",
+        "productCode": "EDU001",
+        "productName": "Education Savings Plan",
+        "policyOwner": {
+          "customerId": "CUST004",
+          "name": "Ma Aye Aye",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST004",
+          "name": "Ma Aye Aye",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "Mg Htet Htet",
+            "relationship": "Son",
+            "percentage": 100
+          }
+        ],
+        "premium": {
+          "amount": 60000,
+          "currency": "MMK",
+          "frequency": "Monthly",
+          "nextPaymentDate": "2026-09-08"
+        },
+        "coverage": {
+          "sumAssured": 40000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2023-09-08",
+        "policyEndDate": "2038-09-08",
+        "status": "Active"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY006",
+        "policyId": "POL005",
+        "date": "2026-08-08",
+        "amount": 60000,
+        "currency": "MMK",
+        "paymentMethod": "Wave Money",
+        "status": "Paid"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-26T20:10:00+06:30",
+      "loginCountLast30Days": 8,
+      "frequentlyViewedServices": [
+        "Policy Details",
+        "Savings Value",
+        "Premium Payment"
+      ],
+      "lastViewedPolicy": "POL005",
+      "preferredContactTime": "19:00-21:00",
+      "preferredChannels": [
+        "Email",
+        "Mobile App"
+      ],
+      "commonQuestions": [
+        "What is the current savings value?",
+        "Can I increase the monthly premium?",
+        "When can I withdraw for education?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI005",
+        "type": "PREMIUM_REMINDER",
+        "channel": "Email",
+        "policyId": "POL005",
+        "sentDate": "2026-08-06T09:00:00+06:30",
+        "message": "Your Education Savings Plan premium of 60,000 MMK is due on 8 August 2026.",
+        "status": "Read"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [
+        {
+          "inquiryId": "INQ004",
+          "date": "2026-08-16",
+          "channel": "Email",
+          "topic": "Savings Value",
+          "question": "What is the current savings value of POL005?",
+          "resolution": "Shared the latest fund statement",
+          "status": "Resolved"
+        }
+      ],
+      "complaints": [],
+      "serviceRequests": [
+        {
+          "requestId": "REQ004",
+          "date": "2026-08-19",
+          "type": "Premium Increase",
+          "description": "Requested to increase monthly premium from 60,000 to 80,000 MMK",
+          "status": "In Progress"
+        }
+      ]
+    }
+  },
+  {
+    "customerId": "CUST005",
+    "nrc": "13/JKL(N)345678",
+    "name": "Ko Aung Aung",
+    "age": 41,
+    "occupation": "Civil Engineer",
+    "monthlyIncome": 1800000,
+    "location": "Taunggyi",
+    "preferredLanguage": "my-MM",
+    "preferredContactChannel": "SMS",
+    "policies": [
+      {
+        "policyId": "POL006",
+        "productCode": "ACC001",
+        "productName": "Personal Accident Cover",
+        "policyOwner": {
+          "customerId": "CUST005",
+          "name": "Ko Aung Aung",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST005",
+          "name": "Ko Aung Aung",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "Daw Nwe Nwe",
+            "relationship": "Spouse",
+            "percentage": 100
+          }
+        ],
+        "premium": {
+          "amount": 15000,
+          "currency": "MMK",
+          "frequency": "Monthly",
+          "nextPaymentDate": "2026-09-20"
+        },
+        "coverage": {
+          "sumAssured": 15000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2025-03-20",
+        "policyEndDate": "2027-03-20",
+        "status": "Active"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY007",
+        "policyId": "POL006",
+        "date": "2026-08-20",
+        "amount": 15000,
+        "currency": "MMK",
+        "paymentMethod": "CB Pay",
+        "status": "Paid"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-22T07:40:00+06:30",
+      "loginCountLast30Days": 4,
+      "frequentlyViewedServices": [
+        "Claim Status",
+        "Policy Details",
+        "Coverage Limits"
+      ],
+      "lastViewedPolicy": "POL006",
+      "preferredContactTime": "07:00-08:00",
+      "preferredChannels": [
+        "SMS",
+        "Phone"
+      ],
+      "commonQuestions": [
+        "Does this cover workplace injury?",
+        "How do I file an accident claim?",
+        "Can I renew before expiry?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI006",
+        "type": "RENEWAL_REMINDER",
+        "channel": "SMS",
+        "policyId": "POL006",
+        "sentDate": "2026-08-20T10:00:00+06:30",
+        "message": "Your Personal Accident Cover POL006 expires on 20 March 2027. Renew early to stay covered.",
+        "status": "Delivered"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [
+        {
+          "inquiryId": "INQ005",
+          "date": "2026-08-12",
+          "channel": "SMS",
+          "topic": "Coverage",
+          "question": "Does POL006 cover workplace injury?",
+          "resolution": "Confirmed occupational accidents are covered except high-risk exclusions",
+          "status": "Resolved"
+        }
+      ],
+      "complaints": [],
+      "serviceRequests": []
+    }
+  },
+  {
+    "customerId": "CUST006",
+    "nrc": "7/MNO(N)456789",
+    "name": "Daw Thin Thin",
+    "age": 52,
+    "occupation": "Shop Owner",
+    "monthlyIncome": 900000,
+    "location": "Bago",
+    "preferredLanguage": "my-MM",
+    "preferredContactChannel": "Phone",
+    "policies": [
+      {
+        "policyId": "POL007",
+        "productCode": "HLTH002",
+        "productName": "Individual Health Cover",
+        "policyOwner": {
+          "customerId": "CUST006",
+          "name": "Daw Thin Thin",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST006",
+          "name": "Daw Thin Thin",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "Ma Ei Ei",
+            "relationship": "Daughter",
+            "percentage": 100
+          }
+        ],
+        "premium": {
+          "amount": 35000,
+          "currency": "MMK",
+          "frequency": "Monthly",
+          "nextPaymentDate": "2026-09-03"
+        },
+        "coverage": {
+          "sumAssured": 10000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2024-09-03",
+        "policyEndDate": "2025-09-03",
+        "status": "Lapsed"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY008",
+        "policyId": "POL007",
+        "date": "2026-07-03",
+        "amount": 35000,
+        "currency": "MMK",
+        "paymentMethod": "Cash",
+        "status": "Paid"
+      },
+      {
+        "paymentId": "PAY009",
+        "policyId": "POL007",
+        "date": "2026-08-03",
+        "amount": 35000,
+        "currency": "MMK",
+        "paymentMethod": "Cash",
+        "status": "Failed"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-04T11:00:00+06:30",
+      "loginCountLast30Days": 1,
+      "frequentlyViewedServices": [
+        "Premium Payment",
+        "Policy Revival",
+        "Hospital Network"
+      ],
+      "lastViewedPolicy": "POL007",
+      "preferredContactTime": "10:00-12:00",
+      "preferredChannels": [
+        "Phone"
+      ],
+      "commonQuestions": [
+        "How do I revive a lapsed policy?",
+        "Can I pay the missed premium now?",
+        "Is my hospital visit still covered?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI007",
+        "type": "LAPSE_NOTICE",
+        "channel": "SMS",
+        "policyId": "POL007",
+        "sentDate": "2026-08-10T09:30:00+06:30",
+        "message": "POL007 has lapsed due to unpaid premium. Please contact us to revive your cover.",
+        "status": "Delivered"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [
+        {
+          "inquiryId": "INQ006",
+          "date": "2026-08-11",
+          "channel": "Phone",
+          "topic": "Policy Revival",
+          "question": "How do I revive POL007 after a missed payment?",
+          "resolution": "Explained revival steps and outstanding amount of 35,000 MMK",
+          "status": "Resolved"
+        }
+      ],
+      "complaints": [],
+      "serviceRequests": [
+        {
+          "requestId": "REQ005",
+          "date": "2026-08-11",
+          "type": "Policy Revival",
+          "description": "Requested revival of lapsed Individual Health Cover POL007",
+          "status": "In Progress"
+        }
+      ]
+    }
+  },
+  {
+    "customerId": "CUST007",
+    "nrc": "8/PQR(N)567890",
+    "name": "Mg Zaw Min",
+    "age": 26,
+    "occupation": "Sales Executive",
+    "monthlyIncome": 700000,
+    "location": "Mawlamyine",
+    "preferredLanguage": "my-MM",
+    "preferredContactChannel": "Mobile App",
+    "policies": [
+      {
+        "policyId": "POL008",
+        "productCode": "LIFE003",
+        "productName": "Term Life Plan",
+        "policyOwner": {
+          "customerId": "CUST007",
+          "name": "Mg Zaw Min",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST007",
+          "name": "Mg Zaw Min",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "Daw Khin Aye",
+            "relationship": "Mother",
+            "percentage": 60
+          },
+          {
+            "name": "Mg Lin Lin",
+            "relationship": "Brother",
+            "percentage": 40
+          }
+        ],
+        "premium": {
+          "amount": 18000,
+          "currency": "MMK",
+          "frequency": "Monthly",
+          "nextPaymentDate": "2026-09-18"
+        },
+        "coverage": {
+          "sumAssured": 30000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2026-03-18",
+        "policyEndDate": "2046-03-18",
+        "status": "Active"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY010",
+        "policyId": "POL008",
+        "date": "2026-08-18",
+        "amount": 18000,
+        "currency": "MMK",
+        "paymentMethod": "KBZ Pay",
+        "status": "Paid"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-28T22:05:00+06:30",
+      "loginCountLast30Days": 15,
+      "frequentlyViewedServices": [
+        "Policy Details",
+        "Beneficiary Information",
+        "Premium Payment"
+      ],
+      "lastViewedPolicy": "POL008",
+      "preferredContactTime": "21:00-23:00",
+      "preferredChannels": [
+        "Mobile App",
+        "SMS"
+      ],
+      "commonQuestions": [
+        "Can I change the beneficiary split?",
+        "What happens if I miss a payment?",
+        "Can I convert this to whole life later?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI008",
+        "type": "WELCOME_SMS",
+        "channel": "SMS",
+        "policyId": "POL008",
+        "sentDate": "2026-03-18T11:00:00+06:30",
+        "message": "Welcome to Term Life Plan. Your policy POL008 is now active.",
+        "status": "Delivered"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [],
+      "complaints": [],
+      "serviceRequests": [
+        {
+          "requestId": "REQ006",
+          "date": "2026-08-25",
+          "type": "Beneficiary Change",
+          "description": "Requested to change beneficiary split to 50/50",
+          "status": "Completed"
+        }
+      ]
+    }
+  },
+  {
+    "customerId": "CUST008",
+    "nrc": "6/STU(N)678901",
+    "name": "Ma Nilar Win",
+    "age": 39,
+    "occupation": "Nurse",
+    "monthlyIncome": 950000,
+    "location": "Pathein",
+    "preferredLanguage": "my-MM",
+    "preferredContactChannel": "SMS",
+    "policies": [
+      {
+        "policyId": "POL009",
+        "productCode": "HOME001",
+        "productName": "Home Protection Plan",
+        "policyOwner": {
+          "customerId": "CUST008",
+          "name": "Ma Nilar Win",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST008",
+          "name": "Ma Nilar Win",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "U Win Aung",
+            "relationship": "Spouse",
+            "percentage": 100
+          }
+        ],
+        "premium": {
+          "amount": 85000,
+          "currency": "MMK",
+          "frequency": "Annually",
+          "nextPaymentDate": "2027-02-10"
+        },
+        "coverage": {
+          "sumAssured": 35000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2026-02-10",
+        "policyEndDate": "2027-02-10",
+        "status": "Active"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY011",
+        "policyId": "POL009",
+        "date": "2026-02-10",
+        "amount": 85000,
+        "currency": "MMK",
+        "paymentMethod": "Bank Transfer",
+        "status": "Paid"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-18T16:20:00+06:30",
+      "loginCountLast30Days": 2,
+      "frequentlyViewedServices": [
+        "Policy Details",
+        "Claim Status",
+        "Coverage Limits"
+      ],
+      "lastViewedPolicy": "POL009",
+      "preferredContactTime": "16:00-18:00",
+      "preferredChannels": [
+        "SMS",
+        "Email"
+      ],
+      "commonQuestions": [
+        "Does flood damage count as a claim?",
+        "How do I update my home address?",
+        "What documents are needed for a claim?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI009",
+        "type": "PAYMENT_CONFIRMATION",
+        "channel": "SMS",
+        "policyId": "POL009",
+        "sentDate": "2026-02-10T15:10:00+06:30",
+        "message": "Payment of 85,000 MMK for POL009 has been received. Thank you.",
+        "status": "Delivered"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [
+        {
+          "inquiryId": "INQ007",
+          "date": "2026-08-14",
+          "channel": "Call Center",
+          "topic": "Coverage",
+          "question": "Does POL009 cover flood damage in Pathein?",
+          "resolution": "Confirmed flood is covered under the natural disaster rider",
+          "status": "Resolved"
+        }
+      ],
+      "complaints": [],
+      "serviceRequests": []
+    }
+  },
+  {
+    "customerId": "CUST009",
+    "nrc": "5/VWX(N)789123",
+    "name": "U Thein Win",
+    "age": 58,
+    "occupation": "Retired Civil Servant",
+    "monthlyIncome": 650000,
+    "location": "Monywa",
+    "preferredLanguage": "my-MM",
+    "preferredContactChannel": "Phone",
+    "policies": [
+      {
+        "policyId": "POL010",
+        "productCode": "TRAVEL001",
+        "productName": "Travel Insurance",
+        "policyOwner": {
+          "customerId": "CUST009",
+          "name": "U Thein Win",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST009",
+          "name": "U Thein Win",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "Daw San San",
+            "relationship": "Spouse",
+            "percentage": 100
+          }
+        ],
+        "premium": {
+          "amount": 42000,
+          "currency": "MMK",
+          "frequency": "Single",
+          "nextPaymentDate": null
+        },
+        "coverage": {
+          "sumAssured": 8000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2026-08-01",
+        "policyEndDate": "2026-09-15",
+        "status": "Active"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY012",
+        "policyId": "POL010",
+        "date": "2026-07-28",
+        "amount": 42000,
+        "currency": "MMK",
+        "paymentMethod": "MPU Card",
+        "status": "Paid"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-15T09:45:00+06:30",
+      "loginCountLast30Days": 5,
+      "frequentlyViewedServices": [
+        "Policy Details",
+        "Emergency Contacts",
+        "Claim Status"
+      ],
+      "lastViewedPolicy": "POL010",
+      "preferredContactTime": "09:00-11:00",
+      "preferredChannels": [
+        "Phone"
+      ],
+      "commonQuestions": [
+        "What is the emergency hotline abroad?",
+        "Are medical expenses overseas covered?",
+        "How do I extend the travel period?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI010",
+        "type": "WELCOME_SMS",
+        "channel": "SMS",
+        "policyId": "POL010",
+        "sentDate": "2026-07-28T16:00:00+06:30",
+        "message": "Your Travel Insurance POL010 is active from 1 August to 15 September 2026.",
+        "status": "Delivered"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [
+        {
+          "inquiryId": "INQ008",
+          "date": "2026-07-29",
+          "channel": "Phone",
+          "topic": "Emergency Contacts",
+          "question": "What is the emergency hotline if I need medical help overseas?",
+          "resolution": "Provided 24-hour assistance number and emailed the travel card",
+          "status": "Resolved"
+        }
+      ],
+      "complaints": [],
+      "serviceRequests": []
+    }
+  },
+  {
+    "customerId": "CUST010",
+    "nrc": "4/YZA(N)890234",
+    "name": "Ma Khin Khin",
+    "age": 30,
+    "occupation": "Marketing Officer",
+    "monthlyIncome": 1100000,
+    "location": "Magway",
+    "preferredLanguage": "en-MM",
+    "preferredContactChannel": "Email",
+    "policies": [
+      {
+        "policyId": "POL011",
+        "productCode": "PA001",
+        "productName": "Group Personal Accident",
+        "policyOwner": {
+          "customerId": "CUST010",
+          "name": "Ma Khin Khin",
+          "relationship": "Self"
+        },
+        "lifeInsured": {
+          "customerId": "CUST010",
+          "name": "Ma Khin Khin",
+          "relationship": "Self"
+        },
+        "beneficiaries": [
+          {
+            "name": "U Myint Aung",
+            "relationship": "Father",
+            "percentage": 50
+          },
+          {
+            "name": "Daw Hla Myint",
+            "relationship": "Mother",
+            "percentage": 50
+          }
+        ],
+        "premium": {
+          "amount": 12000,
+          "currency": "MMK",
+          "frequency": "Monthly",
+          "nextPaymentDate": "2026-09-25"
+        },
+        "coverage": {
+          "sumAssured": 12000000,
+          "currency": "MMK"
+        },
+        "policyStartDate": "2025-09-25",
+        "policyEndDate": "2026-09-25",
+        "status": "Active"
+      }
+    ],
+    "paymentHistory": [
+      {
+        "paymentId": "PAY013",
+        "policyId": "POL011",
+        "date": "2026-08-25",
+        "amount": 12000,
+        "currency": "MMK",
+        "paymentMethod": "Wave Money",
+        "status": "Paid"
+      }
+    ],
+    "customerBehaviour": {
+      "lastLogin": "2026-08-27T13:30:00+06:30",
+      "loginCountLast30Days": 9,
+      "frequentlyViewedServices": [
+        "Policy Details",
+        "Beneficiary Information",
+        "Premium Payment"
+      ],
+      "lastViewedPolicy": "POL011",
+      "preferredContactTime": "12:00-14:00",
+      "preferredChannels": [
+        "Email",
+        "Mobile App"
+      ],
+      "commonQuestions": [
+        "Can I add a spouse as beneficiary?",
+        "Is commuting to work covered?",
+        "How do I download my e-policy?"
+      ]
+    },
+    "notifications": [
+      {
+        "notificationId": "NOTI011",
+        "type": "PREMIUM_REMINDER",
+        "channel": "Email",
+        "policyId": "POL011",
+        "sentDate": "2026-08-23T09:00:00+06:30",
+        "message": "Your Group Personal Accident premium of 12,000 MMK is due on 25 August 2026.",
+        "status": "Read"
+      },
+      {
+        "notificationId": "NOTI012",
+        "type": "PAYMENT_CONFIRMATION",
+        "channel": "Email",
+        "policyId": "POL011",
+        "sentDate": "2026-08-25T14:05:00+06:30",
+        "message": "Payment of 12,000 MMK for POL011 has been received. Thank you.",
+        "status": "Delivered"
+      }
+    ],
+    "customerService": {
+      "previousInquiries": [
+        {
+          "inquiryId": "INQ009",
+          "date": "2026-08-21",
+          "channel": "Email",
+          "topic": "Beneficiary Information",
+          "question": "Can I add my spouse as a third beneficiary?",
+          "resolution": "Advised that percentages must total 100% and sent the change form",
+          "status": "Resolved"
+        }
+      ],
+      "complaints": [],
+      "serviceRequests": [
+        {
+          "requestId": "REQ007",
+          "date": "2026-08-26",
+          "type": "E-Policy Download",
+          "description": "Requested a copy of the e-policy document for POL011",
+          "status": "Completed"
+        }
+      ]
+    }
+  }
+]

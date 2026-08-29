@@ -1,0 +1,29 @@
+@TestingWebApp_HostAddress = http://localhost:5000
+
+### Get all customer IDs and NRCs
+GET {{TestingWebApp_HostAddress}}/api/customers
+Accept: application/json
+
+### Get complete customer information by NRC (Mg Mg)
+GET {{TestingWebApp_HostAddress}}/api/customers/details/by-nrc/12%2FABC%28N%29123456
+Accept: application/json
+
+### Find customer ID by NRC (Mg Mg)
+GET {{TestingWebApp_HostAddress}}/api/customers/by-nrc/12%2FABC%28N%29123456
+Accept: application/json
+
+### Find customer ID by NRC (Ma Hla Hla)
+GET {{TestingWebApp_HostAddress}}/api/customers/by-nrc/9%2FXYZ%28N%29654321
+Accept: application/json
+
+### Get complete customer information
+GET {{TestingWebApp_HostAddress}}/api/customers/CUST001
+Accept: application/json
+
+### Customer not found by NRC
+GET {{TestingWebApp_HostAddress}}/api/customers/by-nrc/00%2FNONE%28N%29000000
+Accept: application/json
+
+### Customer not found by ID
+GET {{TestingWebApp_HostAddress}}/api/customers/CUST999
+Accept: application/json

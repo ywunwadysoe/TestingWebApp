@@ -15,6 +15,17 @@ public class Program
         builder.Services.AddSingleton<CustomerJsonRepository>();
         builder.Services.AddScoped<Services.CustomerService>();
 
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("ReactFrontend", policy =>
+            {
+                policy
+                    .WithOrigins("http://localhost:5173", "http://127.0.0.1:5173")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+            });
+        });
+
         builder.Services.AddControllers()
             .AddJsonOptions(options =>
             {
@@ -34,6 +45,7 @@ public class Program
         }
 
         app.UseHttpsRedirection();
+        app.UseCors("ReactFrontend");
         app.UseAuthorization();
         app.UseSwagger();
         app.UseSwaggerUI();

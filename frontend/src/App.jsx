@@ -49,9 +49,8 @@ function App() {
   const customerId = customer?.customerId;
   const { messages, loading, sendMessage, clearMessages } = useChat(customerId, (error) =>
     setNotice(
-      error.code === "CHAT_ENDPOINT_NOT_CONFIGURED"
-        ? "AI chat is not available yet. The backend currently has customer APIs only."
-        : "We could not reach the AI service. Please try again later.",
+      error.response?.data?.message ||
+        "We could not reach the AI service. Please try again later.",
     ),
   );
 

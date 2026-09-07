@@ -14,6 +14,7 @@ public class Program
 
         builder.Services.AddSingleton<CustomerJsonRepository>();
         builder.Services.AddScoped<Services.CustomerService>();
+        builder.Services.AddHttpClient();
 
         builder.Services.AddCors(options =>
         {
@@ -30,7 +31,7 @@ public class Program
             .AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
-                options.JsonSerializerOptions.WriteIndented = false;
+                options.JsonSerializerOptions.WriteIndented = true;
             });
 
         builder.Services.AddOpenApi();
@@ -50,6 +51,7 @@ public class Program
         app.UseSwagger();
         app.UseSwaggerUI();
 
+        app.MapGet("/", () => Results.Redirect("/swagger"));
         app.MapControllers();
         app.Run();
     }

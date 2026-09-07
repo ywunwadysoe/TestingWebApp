@@ -27,7 +27,7 @@ function ChatInput({ onSend, loading, disabled }) {
       onKeyDown={onKeyDown}
       placeholder={
         disabled
-          ? "AI chat will be available when the backend endpoint is added"
+          ? "Select a customer to start chatting"
           : "Ask about this customer..."
       }
       disabled={loading}
